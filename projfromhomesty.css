@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin-top: 0;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.navbar {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  animation-name: nav;
+  animation-duration: 3.5s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes nav {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.nav-selectors {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  align-items: center;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.nav-link:hover {
+  color: white;
+  background-color: rgb(69, 71, 81);
+}
+
+#top-container {
+  width: 100%;
+  height: 80vh;
+  margin: 5vh auto;
+  border: 2px solid;
+  position: absolute;
+}
+
+.box1 {
+  display: flex;
+  position: relative;
+  top: 100px;
+  left: 200px;
+  height: 100px;
+  width: 100px;
+  background-color: rgb(0, 0, 0);
+
+  vertical-align: top;
+
+  animation-name: box1;
+  animation-duration: 0s;
+  animation-delay: 0s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes box1 {
+  from {
+    left: -100px;
+    opacity: 0%;
+  }
+  to {
+    left: 200px;
+    opacity: 100%;
+  }
+}
+
+.box2 {
+  display: flex;
+  position: relative;
+  top: -10px;
+  left: 250px;
+  height: 5px;
+  width: 250px;
+  background-color: rgb(0, 0, 0);
+  vertical-align: top;
+
+  animation-name: box2;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes box2 {
+  from {
+    top: -10px;
+    opacity: 100%;
+  }
+  to {
+    top: -150px;
+    opacity: 0%;
+  }
+}
+
+.box3 {
+  display: flex;
+  position: relative;
+  top: 100px;
+  left: 275px;
+  height: 250px;
+  width: 5px;
+  background-color: rgb(0, 0, 0);
+  vertical-align: top;
+
+  animation-name: box3;
+  animation-duration: 0s;
+  animation-delay: 0s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes box3 {
+  from {
+    top: 500px;
+    opacity: 0%;
+  }
+  to {
+    top: 100px;
+    opacity: 100%;
+  }
+}
+
+#link-container1 {
+  width: 80%;
+  height: 80vh;
+  margin: 5vh auto;
+  position: absolute;
+  vertical-align: top;
+}
+#link-container2 {
+  width: 80%;
+  height: 80vh;
+  margin: 5vh auto;
+  position: absolute;
+  vertical-align: top;
+}
+
+.name {
+  display: flex;
+  position: fixed;
+  top: 100px;
+  left: 500px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  vertical-align: top;
+  animation-name: link1;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+.about {
+  display: flex;
+  position: fixed;
+  top: 220px;
+  left: 180px;
+  color: black;
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  vertical-align: top;
+  animation-name: link1;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+.projects {
+  display: flex;
+  position: fixed;
+  top: 125px;
+  left: 75px;
+  color: black;
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  vertical-align: top;
+  animation-name: link1;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+.git {
+  display: flex;
+  position: fixed;
+  top: 160px;
+  left: 120px;
+  color: black;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  vertical-align: top;
+  animation-name: link1;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+.resume {
+  transform-origin: top right;
+  display: flex;
+  position: fixed;
+  top: 500px;
+  left: 200px;
+  transform: rotate(90deg);
+  color: black;
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  vertical-align: top;
+  animation-name: link1;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes link1 {
+  0% {
+    opacity: 1;
+    color: #000000;
+  }
+  100% {
+    opacity: 0;
+    color: #00000000;
+  }
+}
+.project {
+  display: flex;
+  position: fixed;
+  top: 68px;
+  left: 140px;
+  color: black;
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+  vertical-align: top;
+  animation-name: link2;
+  animation-duration: 4s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+.pro1 {
+  display: flex;
+  position: fixed;
+  top: 205px;
+  left: 285px;
+  color: black;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  vertical-align: top;
+  animation-name: link2;
+  animation-duration: 4s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+.pro2 {
+  display: flex;
+  position: fixed;
+  top: 240px;
+  left: 285px;
+  color: black;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  vertical-align: top;
+  animation-name: link2;
+  animation-duration: 4s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+.pro3 {
+  display: flex;
+  position: fixed;
+  top: 275px;
+  left: 285px;
+  color: black;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  vertical-align: top;
+  animation-name: link2;
+  animation-duration: 4s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+.pro4 {
+  transform-origin: top right;
+  display: flex;
+  position: fixed;
+  top: 310px;
+  left: 285px;
+
+  color: black;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  vertical-align: top;
+  animation-name: link2;
+  animation-duration: 4s;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+}
+
+@keyframes link2 {
+  0% {
+    opacity: 0;
+    color: #000000;
+  }
+  80% {
+    opacity: 0;
+    color: #000000;
+  }
+  100% {
+    opacity: 1;
+    color: #000;
+  }
+}
+
+.image1 {
+  opacity: 1;
+  transition: 500ms;
+  transform: translateY(0);
+  transform-origin: bottom;
+}
+
+html.is-animating .image1 {
+  opacity: 1;
+  top: 10;
+}
