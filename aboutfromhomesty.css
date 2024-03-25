@@ -21,7 +21,7 @@ body {
   width: 100%;
   z-index: 3;
   animation-name: nav;
-  animation-duration: 4s;
+  animation-duration: 7s;
   animation-delay: 0s;
   animation-fill-mode: both;
 }
